@@ -68,3 +68,22 @@ Covers:
 ---
 
 # 🗂 Project Structure
+
+Kingshot-Guides/
+
+│
+├── index.html
+│
+├── css/
+│ ├── style.css
+│ └── guides.css
+│
+├── js/
+│ └── menu.js
+│
+├── guides/
+│ ├── pets.html
+│ ├── bear-hunt.html
+│ └── eternity.html
+│
+└── README.md
