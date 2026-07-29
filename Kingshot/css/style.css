@@ -1,0 +1,814 @@
+/* ==========================================================
+   KINGSHOT GUIDES
+   Global Stylesheet
+   STM StormBreakers
+========================================================== */
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: #111111;
+
+    color: #ECECEC;
+
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+
+    min-height: 100vh;
+
+    padding-top: 70px;
+
+}
+
+
+
+/* ==========================================================
+   COLORS
+========================================================== */
+
+
+:root {
+
+    --bg: #111111;
+
+    --surface: #1A1A1A;
+
+    --surface-hover: #242424;
+
+    --border: #2D2D2D;
+
+    --gold: #C8A348;
+
+    --gold-light: #F4D77A;
+
+    --green: #2ECC71;
+
+    --red: #E74C3C;
+
+    --text: #ECECEC;
+
+    --text-secondary: #B0B0B0;
+
+}
+
+
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+
+.page {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 50px 40px 80px;
+
+}
+
+
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+
+.topbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 70px;
+
+    background: #171717;
+
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    z-index: 10000;
+
+}
+
+
+
+.topbar-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+.menu-button {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    z-index: 10001;
+
+}
+
+
+
+.menu-button:hover {
+
+    color: var(--gold);
+
+}
+
+
+
+.site-name {
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
+
+
+.back-home {
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .25s;
+
+}
+
+
+
+.back-home:hover {
+
+    color: var(--gold-light);
+
+}
+
+
+
+/* ==========================================================
+   SIDEBAR MENU
+========================================================== */
+
+
+.sidebar {
+
+    position: fixed;
+
+    top: 70px;
+
+    left: -300px;
+
+    width: 280px;
+
+    height: calc(100vh - 70px);
+
+    background: #181818;
+
+    border-right: 1px solid var(--border);
+
+    transition: .3s ease;
+
+    overflow-y: auto;
+
+    z-index: 9999;
+
+}
+
+
+
+.sidebar.active {
+
+    left: 0;
+
+}
+
+
+
+.sidebar h2 {
+
+    padding: 25px;
+
+    color: var(--gold);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.sidebar a {
+
+    display: block;
+
+    padding: 16px 25px;
+
+    color: #DDD;
+
+    text-decoration: none;
+
+    transition: .25s;
+
+}
+
+
+
+.sidebar a:hover {
+
+    background: #242424;
+
+    color: var(--gold);
+
+}
+
+
+
+.sidebar hr {
+
+    border: none;
+
+    border-top: 1px solid var(--border);
+
+    margin: 15px 0;
+
+}
+
+
+
+.sidebar-footer {
+
+    padding: 20px;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ==========================================================
+   MENU OVERLAY
+========================================================== */
+
+
+.menu-overlay {
+
+    position: fixed;
+
+    top: 70px;
+
+    left: 0;
+
+    width: 100%;
+
+    height: calc(100vh - 70px);
+
+    background: rgba(0, 0, 0, .55);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s ease;
+
+    z-index: 9998;
+
+}
+
+
+
+.menu-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+
+.site-header {
+
+    text-align: left;
+
+    margin-bottom: 50px;
+
+    padding: 20px 10px;
+
+}
+
+
+
+.alliance-name {
+
+    color: var(--gold);
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.site-title {
+
+    font-size: 52px;
+
+    margin-bottom: 15px;
+
+    color: var(--gold);
+
+    line-height: 1.1;
+
+}
+
+
+
+.last-update {
+
+    color: #888;
+
+}
+
+
+
+/* ==========================================================
+   GUIDE LIST
+========================================================== */
+
+
+.guide-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+
+.guide-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--gold);
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: .25s;
+
+}
+
+
+
+.guide-card:hover {
+
+    background: var(--surface-hover);
+
+    transform: translateY(-2px);
+
+    border-color: var(--gold);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .30);
+
+}
+
+
+
+.guide-icon {
+
+    font-size: 32px;
+
+}
+
+
+
+.guide-name {
+
+    flex: 1;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
+
+
+.coming-soon {
+
+    color: #888;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.disabled {
+
+    opacity: .45;
+
+    cursor: default;
+
+}
+
+
+
+.disabled:hover {
+
+    transform: none;
+
+    background: var(--surface);
+
+    border-color: var(--border);
+
+    box-shadow: none;
+
+}
+
+
+
+/* ==========================================================
+   GUIDE CONTENT
+========================================================== */
+
+
+.guide-section {
+
+    background: #171717;
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--gold);
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .25);
+
+    transition: .25s;
+
+}
+
+
+.guide-section:hover {
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+
+}
+
+
+
+.guide-section h2 {
+
+    color: var(--gold);
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.guide-section p {
+
+    color: #DDD;
+
+    line-height: 1.7;
+
+}
+
+
+
+.guide-section ul {
+
+    margin-left: 20px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+
+.guide-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+
+
+.guide-table th {
+
+    background: #242424;
+
+    color: var(--gold);
+
+    padding: 12px;
+
+    text-align: left;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.guide-table td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid var(--border);
+
+    color: #DDD;
+
+}
+
+
+
+.guide-table tr:hover {
+
+    background: #1F1F1F;
+
+}
+
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+
+.button {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: .25s;
+
+}
+
+
+
+.button-primary {
+
+    background: var(--gold);
+
+    color: #111;
+
+    font-weight: 600;
+
+}
+
+
+
+.button-primary:hover {
+
+    background: var(--gold-light);
+
+}
+
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+
+.site-footer {
+
+    margin-top: 50px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+    background: #151515;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+    background: #444;
+
+    border-radius: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--gold);
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+
+@media(max-width:768px) {
+
+
+    body {
+
+        padding-top: 70px;
+
+    }
+
+
+
+    .page {
+
+        padding: 30px 20px 60px;
+
+    }
+
+
+    .site-title {
+
+        font-size: 34px;
+
+    }
+
+
+
+    .site-name {
+
+        font-size: 17px;
+
+    }
+
+
+
+    .guide-name {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .guide-card {
+
+        padding: 18px;
+
+    }
+
+
+
+    .sidebar {
+
+        width: 100%;
+
+        left: -100%;
+
+    }
+
+
+
+    .sidebar.active {
+
+        left: 0;
+
+    }
+
+
+
+    .topbar {
+
+        padding: 0 15px;
+
+    }
+
+
+
+    .back-home {
+
+        font-size: 14px;
+
+    }
+
+
+
+}

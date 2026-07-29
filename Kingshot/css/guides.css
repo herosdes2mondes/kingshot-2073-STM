@@ -1,0 +1,526 @@
+/* ==========================================================
+   GUIDE PAGES
+   Kingshot Guides
+========================================================== */
+
+
+/* ==========================================================
+   GUIDE HEADER
+========================================================== */
+
+.guide-header {
+
+    position: relative;
+
+    padding: 35px 35px 45px;
+
+    margin-bottom: 50px;
+
+    background:
+        linear-gradient(135deg,
+            rgba(200, 163, 72, .08),
+            transparent 60%);
+
+    border-left: 4px solid var(--gold);
+
+    border-radius: 12px;
+
+}
+
+
+
+.guide-category {
+
+    display: inline-block;
+
+    color: var(--gold);
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+    opacity: .9;
+
+}
+
+
+
+.guide-title {
+
+    font-size: 56px;
+
+    color: var(--gold);
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.guide-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 3px;
+
+    margin-top: 18px;
+
+    background: var(--gold);
+
+    border-radius: 5px;
+
+}
+
+
+
+.guide-description {
+
+    max-width: 850px;
+
+    margin-top: 25px;
+
+    color: var(--text-secondary);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================================
+   GUIDE CONTENT
+========================================================== */
+
+.guide-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+
+}
+
+
+/* ==========================================================
+   SECTION CARD
+========================================================== */
+
+.guide-section {
+
+    background: #171717;
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--gold);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition: .25s;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .25);
+
+}
+
+.guide-section:hover {
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
+
+}
+
+
+/* ==========================================================
+   SECTION TITLE
+========================================================== */
+
+.guide-section h2 {
+
+    background: #202020;
+
+    color: var(--gold);
+
+    padding: 18px 24px;
+
+    font-size: 24px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+/* ==========================================================
+   SECTION CONTENT
+========================================================== */
+
+.section-content {
+
+    padding: 25px;
+
+}
+
+.section-content p {
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+    color: var(--text);
+
+}
+
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+.section-content ul,
+
+.section-content ol {
+
+    padding-left: 28px;
+
+}
+
+.section-content li {
+
+    margin-bottom: 12px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   SPECIAL SECTIONS
+========================================================== */
+
+.warning {
+
+    border-left-color: var(--red);
+
+}
+
+.warning h2 {
+
+    color: var(--red);
+
+}
+
+.success {
+
+    border-left-color: var(--green);
+
+}
+
+.success h2 {
+
+    color: var(--green);
+
+}
+
+
+/* ==========================================================
+   INFO BOX
+========================================================== */
+
+.info-box {
+
+    background: #242424;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+}
+
+.info-box h3 {
+
+    color: var(--gold);
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ==========================================================
+   QUICK TIP
+========================================================== */
+
+.tip {
+
+    margin-top: 20px;
+
+    background: rgba(200, 163, 72, .08);
+
+    border-left: 4px solid var(--gold);
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+}
+
+
+/* ==========================================================
+   QUOTE
+========================================================== */
+
+.quote {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    color: var(--gold);
+
+}
+
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+th {
+
+    background: var(--gold);
+
+    color: #111;
+
+    padding: 15px;
+
+}
+
+td {
+
+    background: #202020;
+
+    border: 1px solid #333;
+
+    padding: 14px;
+
+}
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+.guide-image {
+
+    width: 100%;
+
+    display: block;
+
+    margin-top: 20px;
+
+    border-radius: 12px;
+
+    border: 2px solid var(--border);
+
+}
+
+
+/* ==========================================================
+   DIVIDERS
+========================================================== */
+
+.divider {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: var(--border);
+
+    margin: 30px 0;
+
+}
+
+
+/* ==========================================================
+   GUIDE NAVIGATION
+========================================================== */
+
+.guide-navigation {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 50px;
+
+    gap: 15px;
+
+}
+
+.guide-navigation a {
+
+    text-decoration: none;
+
+    color: var(--gold);
+
+    transition: .25s;
+
+}
+
+.guide-navigation a:hover {
+
+    color: var(--gold-light);
+
+}
+
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.badge {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 6px;
+
+    background: var(--gold);
+
+    color: #111;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-right: 8px;
+
+}
+
+
+/* ==========================================================
+   CHECKLIST
+========================================================== */
+
+.checklist {
+
+    list-style: none;
+
+    padding-left: 0;
+
+}
+
+.checklist li {
+
+    padding: 8px 0;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:768px) {
+
+    .guide-title {
+
+        font-size: 36px;
+
+    }
+
+    .guide-description {
+
+        font-size: 16px;
+
+    }
+
+    .guide-section h2 {
+
+        font-size: 21px;
+
+        padding: 16px 20px;
+
+    }
+
+    .section-content {
+
+        padding: 20px;
+
+    }
+
+    .guide-navigation {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .guide-header {
+
+        padding: 25px 20px 35px;
+
+    }
+
+
+    .guide-title {
+
+        font-size: 36px;
+
+    }
+
+
+    .guide-category {
+
+        letter-spacing: 2px;
+
+        font-size: 12px;
+
+    }
+
+
+    .guide-description {
+
+        font-size: 16px;
+
+    }
+
+}
