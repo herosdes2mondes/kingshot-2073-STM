@@ -1,8 +1,5 @@
 # 🏰 Kingshot Guides
 
-![Kingshot Guides](https://img.shields.io/badge/Kingshot-Guides-C8A348?style=for-the-badge)
-![Alliance](https://img.shields.io/badge/STM-StormBreakers-111111?style=for-the-badge)
-
 A community-driven guide website created for **STM StormBreakers** players in **Kingshot**.
 
 The goal is simple:
