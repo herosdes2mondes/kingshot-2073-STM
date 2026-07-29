@@ -1,6 +1,7 @@
-# 🏰 Kingshot Guides [➡️](https://herosdes2mondes.github.io/kingshot-2073-STM/STM-guides/)
-
+# 🏰 Kingshot Guides 
 A community-driven guide website created for **STM StormBreakers** players in **Kingshot**.
+
+# [➡️ Acess Here](https://herosdes2mondes.github.io/kingshot-2073-STM/STM-guides/)
 
 The goal is simple:
 
